@@ -20,7 +20,7 @@
         		"preference": "pair",
         		"guests": ["name_2", "name_3"]
         	}
-        }
+        ]
         ```
         
 - a few notes about the inputs
