@@ -131,21 +131,4 @@ const main = (
   console.log(tables);
 };
 
-main(
-  2,
-  ['jon snow', 'dany targaryan', 'robert baratheon', 'ned stark', 'arya stark'],
-  [
-    {
-      'preference': 'avoid',
-      guests: ['dany targaryan', 'robert baratheon'],
-    },
-    {
-      preference: 'pair',
-      guests: ['jon snow', 'dany targaryan'],
-    },
-    {
-      preference: 'pair',
-      guests: ['robert baratheon', 'ned stark'],
-    },
-  ],
-);
+export default main;
