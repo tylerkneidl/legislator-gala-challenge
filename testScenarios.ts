@@ -1,3 +1,8 @@
+/* eslint-disable import/no-unresolved */
+/* eslint-disable import/extensions */
+
+import { Preference } from './typeDefinitions';
+
 const allGuests = [
   'Ned Stark',
   'Robert Baratheon',
@@ -14,7 +19,44 @@ const allGuests = [
   'Jaqen Hghar',
 ];
 
-const allPlannerPreferences = [
+const prefAvoidOverload:Preference[] = [
+  {
+    preference: 'avoid',
+    guests: ['Jaime Lannister', 'Catelyn Stark'],
+  },
+  {
+    preference: 'avoid',
+    guests: ['Jorah Mormont', 'Daario Naharis'],
+  },
+  {
+    preference: 'avoid',
+    guests: ['Catelyn Stark', 'Cersei Lannister'],
+  },
+  {
+    preference: 'avoid',
+    guests: ['Ned Stark', 'Robert Baratheon'],
+  },
+  {
+    preference: 'avoid',
+    guests: ['Jon Snow', 'Daenerys Targaryen'],
+  },
+  {
+    preference: 'avoid',
+    guests: ['Daenerys Targaryen', 'Jorah Mormont'],
+  },
+  {
+    preference: 'avoid',
+    guests: ['Robert Baratheon', 'Daenerys Targaryen'],
+  },
+  {
+    preference: 'avoid',
+    guests: ['Jaime Lannister', 'Cersei Lannister'],
+  },
+];
+
+const prefNeutrality:Preference[] = [];
+
+const allPlannerPreferences:Preference[] = [
   {
     preference: 'avoid',
     guests: ['Jaime Lannister', 'Catelyn Stark'],
@@ -43,4 +85,12 @@ const allPlannerPreferences = [
     preference: 'avoid',
     guests: ['Robert Baratheon', 'Daenerys Targaryen'],
   },
+  {
+    preference: 'pair',
+    guests: ['Jaime Lannister', 'Cersei Lannister'],
+  },
 ];
+
+export default {
+  allGuests, allPlannerPreferences, prefNeutrality, prefAvoidOverload,
+};
