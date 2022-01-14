@@ -62,7 +62,10 @@ export const main = (
   return processOutput(tables);
 };
 
+// if you want to run your own files, the second argument to fs.writeFileSync takes the main
+// function with the correct parameters.  Just replace what I have here.
 fs.writeFileSync('output.json', main(3, testData.allGuests, testData.allPlannerPreferences));
 // eslint-disable-next-line no-console
 console.log('seating plan generated: /output.json');
+
 export default main;
