@@ -75,7 +75,7 @@ export const seatLegislators = (legis: Legislator[], tables: Table[], mode: 'con
         if (l.table === 0) { cantSit.push(l.id); }
       });
       break;
-    case 'neutral':
+    case 'friendly':
       if (legis.length === 0) { break; }
       legis.forEach((l) => {
         for (let i = 0; i < tables.length; i += 1) {
